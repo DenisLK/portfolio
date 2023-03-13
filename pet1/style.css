@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    /* position: relative; */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    width: 17%;
+    height: 93vh;
+    position: sticky;
+    top: 0;
+    padding-top: 50px;
+}
+
+.head_logo {
+    width: 150px;
+    height: auto;
+    border: solid 10px rgb(134, 134, 134);
+    border-radius: 100px;
+
+}
+
+.head_logo:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+
+.head_name {
+    color: aliceblue;
+}
+
+.head_menu {
+    padding-top: 150px;
+}
+
+.head_social {
+    top: 95%;
+}
+
+.head_ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head_li {
+    list-style-type: none;
+    padding: 20px 0px;
+    color: aliceblue;
+}
+
+.head_li:hover {
+    color: rgb(72, 255, 0);
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+.back {
+    /* content: ""; */
+    filter: brightness(10%);
+    opacity: 0.95;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* position: absolute; */
+    z-index: -1;
+    width: 1px;
+    position: fixed;
+    top: 0;
+}
+
+.main {
+    display: flex;
+    width: 400px;
+    padding-top: 150px;
+    padding-left: 400px;
+    z-index: 1;
+    color: rgba(240, 248, 255, 0.349);
+}
