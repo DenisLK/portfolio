@@ -21,10 +21,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     background-color: rgb(22, 22, 22);
     width: 20vw;
     min-width: 300px;
-    height: 93vh;
+    height: 95vh;
     position: sticky;
     top: 0;
     bottom: 0;
@@ -41,21 +42,26 @@ a {
 }
 
 .head_logo:hover {
-    transform: scale(1.2);
+    box-shadow: 5px 5px 15px  #20c99656;
     transition: 0.5s;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .head_name {
     color: aliceblue;
 }
 
-.head_menu {
-    padding-top: 150px;
-}
-
 .head_social {
     top: 95%;
+}
+.fa-instagram:hover{
+    color: rgb(181, 56, 240);
+}
+.fa-square-facebook:hover{
+    color: rgb(54, 107, 252);
+}
+.fa-github:hover{
+    color: #dadcdd;
 }
 
 .head_ul {
@@ -69,19 +75,19 @@ li {
 }
 
 .head_li {
-    padding: 20px 0px;
+    padding: 12px 0px;
     color: aliceblue;
 }
 
 .head_li:hover {
-    color: rgb(72, 255, 0);
+    color: #20c997;
     transition: 0.3s;
 }
 
 .fa-brands {
     color: #acb0b1;
-    width: 30px;
-    height: 30px;
+    font-size: 25px;
+    padding: 12px;
 }
 
 .back {
@@ -113,6 +119,7 @@ li {
 }
 
 .greeting {
+    font-size: 48px;
     color: rgb(240, 248, 255);
     padding-bottom: 30px;
 }
