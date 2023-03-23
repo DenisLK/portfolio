@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(59, 59, 59);
+}
+.player{
+    width: 370px;
+    margin: 0 auto;
+}
+.time-line{
+    background-color: #717171;
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+
+}
+.time-line-active{
+    background-color: rgb(255, 255, 255);
+}
+.scroll_line{
+    display: flex; 
+    margin-top: 5px;
+}
+.time-line + .time-line{
+    margin-left: 4px;
+}
+.time-line-active ~ .time-line > .time-line-inner{
+    width: 0;
+}
+.time-line-inner{
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background-color: aliceblue;
+}
+.content{
+    position: relative;
+}
+.content-switcher{
+    height: 100%;
+    width: 20%;
+}
+.contentChung-prev{
+    position: absolute;
+    left: 0;
+}
+.contentChung-next{
+    position: absolute;
+    right: 0;
+}
+
+.content img{
+    width: 100%;
+}
+.content-chung{
+    display: none;
+}
+.content-chung-active{
+    display: block;
+}
