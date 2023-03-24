@@ -7,41 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <div class="player">
-        <div class="scroll_line">
-            <div class="time-line time-line-active">
-                <div class="time-line-inner"></div>
-            </div>
-            <div class="time-line">
-                <div class="time-line-inner"></div>
-            </div>
-            <div class="time-line">
-                <div class="time-line-inner"></div>
-            </div>
-            <div class="time-line">
-                <div class="time-line-inner"></div>
-            </div>
-            <div class="time-line">
-                <div class="time-line-inner"></div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="content-switcher contentChung-prev"></div>
-            <div class="content-switcher contentChung-next"></div>
-            <div class="content-chung content-chung-active"><img src="img/1.jpg" alt="img"></div>
-            <div class="content-chung"><img src="img/2.jpg" alt="img2"></div>
-            <div class="content-chung"><img src="img/3.jpg" alt="img3"></div>
-            <div class="content-chung"><img src="img/1.jpg" alt="img4"></div>
-            <div class="content-chung"><img src="img/2.jpg" alt="img5"></div>
-        </div>
+    <div class="my-player">
+
     </div>
+    
 
 
-    <script src="index.js"></script>
+    <script>
+        initPlayer({
+            target: 'my-player',
+            slides: [
+                {url: 'img/1.jpg', alt:'slide1'},
+                {url: 'img/2.jpg', alt:'slide2'},
+                {url: 'img/3.jpg', alt:'slide3'},
+                {url: 'img/1.jpg', alt:'slide4'},
+            ],
+            time: 5,
+        });
+    </script>
 </body>
 
 </html>

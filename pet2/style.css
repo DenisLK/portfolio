@@ -16,9 +16,7 @@ body{
     border-radius: 3px;
 
 }
-.time-line-active{
-    background-color: rgb(255, 255, 255);
-}
+
 .scroll_line{
     display: flex; 
     margin-top: 5px;
@@ -26,16 +24,16 @@ body{
 .time-line + .time-line{
     margin-left: 4px;
 }
+.time-line-active > .time-line-inner,
 .time-line-active ~ .time-line > .time-line-inner{
     width: 0;
 }
 .time-line-inner{
-    width: 100%;
     height: inherit;
     border-radius: inherit;
     background-color: aliceblue;
 }
-.content{
+.content-wrapper{
     position: relative;
 }
 .content-switcher{
