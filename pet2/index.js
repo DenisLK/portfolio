@@ -35,10 +35,10 @@ function initPlayer(params) {
 
    
 }
-console.log(document.querySelector('.contentChung-prev'));
 
-document.querySelector('.contentChung-prev').addEventListener('click', function () {
 
+let nextElem = document.querySelector('.contentChung-prev');
+nextElem.addEventListener('click', function () {
     moveClass('content-chung-active', 'previousElementSibling');
     moveClass('time-line-active', 'previousElementSibling', (elem) => {
         const inner = elem.querySelector('.time-line-inner')
