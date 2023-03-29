@@ -268,13 +268,46 @@ li {
     color: #20c997;
 }
 
+.btn-link-resume {
+    position: relative;
+}
+
 .link_resume {
     border: solid 1px #20c997;
     border-radius: 30px;
     background-color: #20c997;
     color: #dee3e4;
-    padding: 10px;
+    padding: 5px 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.425);
+}
+
+.hidden-link {
+    color: #20c997;
+    font-size: 22px;
+}
+
+.hid-link {
+    display: none;
+    position: absolute;
+    left: 30%;
+}
+
+.hid-link-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: ani 1s forwards;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .count {
@@ -423,21 +456,25 @@ li {
     margin-bottom: 100px;
 }
 
-.scroll_line{
-   margin-left: 250px;
+.scroll_line {
+    margin-left: 250px;
 }
-.portfolio_filling{
+
+.portfolio_filling {
     position: relative;
     left: 60px;
 }
-.port-content{
+
+.port-content {
     position: relative;
 }
-.content-switcher{
+
+.content-switcher {
     height: 385px;
     width: 10%;
     z-index: 2;
 }
+
 .contentChung-prev {
     position: absolute;
     left: 0;
@@ -447,31 +484,38 @@ li {
     position: absolute;
     right: 100px;
 }
-.port-item{
+
+.port-item {
     display: none;
 }
-.port-item-active{
+
+.port-item-active {
     display: block;
     position: absolute;
 
 }
+
 .scroll_line {
     display: flex;
     margin-bottom: 20px;
 }
+
 .time-line {
     background-color: #7e7e7e;
     height: 3px;
     width: 10%;
     border-radius: 3px;
 }
+
 .time-line+.time-line {
     margin-left: 4px;
 }
+
 .time-line-active>.time-line-inner,
 .time-line-active~.time-line>.time-line-inner {
     width: 0;
 }
+
 .time-line-inner {
     height: inherit;
     border-radius: inherit;
@@ -502,28 +546,33 @@ li {
     z-index: 3;
     opacity: 1;
 }
-.contact_center{
+
+.contact_center {
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 30px;
     margin-top: 50px;
 }
-.center_left{
+
+.center_left {
     display: flex;
     flex-direction: column;
     width: 40%;
     height: 100%;
     gap: 20px;
 }
-.center_head{
+
+.center_head {
     color: #20c997;
 }
-.fa-solid{
+
+.fa-solid {
     color: #20c997;
     font-size: 21px;
     margin-right: 10px;
 }
-.center_rigth{
+
+.center_rigth {
     width: 40%;
 }
