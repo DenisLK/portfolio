@@ -1,7 +1,3 @@
-// import { createClient } from 'pexels';
-// const client = createClient('tFsLuZZLqOk4rbXhkmN0TjLj8tHqsZ3sQp4AbEB6VBwqCX1aL8Biqoc9');
-
-// const userID = 'tFsLuZZLqOk4rbXhkmN0TjLj8tHqsZ3sQp4AbEB6VBwqCX1aL8Biqoc9'
 const photoEl = document.getElementById('photo');
 
 let state = [];
@@ -12,7 +8,6 @@ const runPhoto = async () => {
     const data = await response.json();
     state = data.data;
     setPhoto();
-console.log(state);
 };
 
 const render = () =>{
@@ -25,15 +20,6 @@ const render = () =>{
         </div>
     </div>`
 }).join("");
-//     return state.data(({image_id}) => {
-//         return `<div class="photo-wrap" style="background-image: url(https://www.artic.edu/iiif/2${image_id}/full/843,/0/default.jpg)">
-//         <div class="photo-text">
-//             <span>Author</span>
-            
-//         </div>
-//     </div>`
-// }).join("");
-    
 }
 const setPhoto = () => {
     photoEl.innerHTML = render();
@@ -41,4 +27,3 @@ const setPhoto = () => {
 
 
 
-runPhoto();
