@@ -38,13 +38,12 @@ document.addEventListener('click', e => {
     if (e.target.classList.contains('fa-regular')) {
         e.target.classList.add('fa-solid');
         e.target.classList.remove('fa-regular');
-        // e.target.parentNode.classList.add('likes');
         e.target.parentNode.classList.remove('photo-none');
     } else {
         if (e.target.classList.contains('fa-solid')) {
             e.target.classList.add('fa-regular');
             e.target.classList.remove('fa-solid');
-            // e.target.parentNode.classList.remove('likes');
+            e.target.parentNode.classList.add('photo-none');
         }
     }
 });
