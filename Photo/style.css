@@ -1,7 +1,40 @@
-.photo-text{
-    height: 500px;
+#photo {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
+    gap: 30px;
+}
+
+.prview {
+    width: 70%;
+    height: auto;
 
 }
-#photo{
-    width: 844px;
+
+.photo-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.like {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: red;
+
+}
+
+.delete {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    height: 20px;
+}
+.none{
+    display: none;
 }
