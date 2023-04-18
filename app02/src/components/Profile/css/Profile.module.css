@@ -1,0 +1,13 @@
+.walperpapir{
+    width: 100%;
+    height: 350px;
+    position: inherit;
+}
+.profile{
+    display: flex;
+    padding: 10px;
+}
+.avatar{
+    width: 100px;
+    border-radius: 50px;
+}

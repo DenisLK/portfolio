@@ -1,0 +1,10 @@
+.avatar{
+    width: 50px;
+    border-radius: 50px;
+}
+.post{
+    display: flex;
+}
+.text{
+    color: rgb(91, 116, 163);
+}
